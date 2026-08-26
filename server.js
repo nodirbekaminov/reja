@@ -1,4 +1,4 @@
-console.log('Web servermi boshlash');
+console.log('Web serverni boshlash!');
 const express = require('express');
 const app = express();
 const http = require('http');
@@ -15,14 +15,14 @@ app.set('views', 'views');
 app.set('view engine', 'ejs');
 
 // 4: Routing Code
-app.get('/hello', function (req, res) {
-  res.end(`<h1">Hello World by NickBro!</h1>`);
+app.post('/create-item', (req, res) => {
+  console.log(req);
+  res.json({ test: 'success' });
 });
 
-app.get('/gift', function (req, res) {
-  res.end(`<h1">Siz sovg'alar bulimidasiz!</h1>`);
+app.get('/', function (req, res) {
+  res.render('harid');
 });
-
 const server = http.createServer(app);
 let PORT = 3000;
 server.listen(PORT, function () {
