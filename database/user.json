@@ -2,49 +2,67 @@
   "name": "Nick",
   "profession": "Full-Stack Software Engineer",
   "age": 26,
-  "residence": "Uzbekistan",
-  "adress": "Uzbekistan, Tashkent",
-  "languages": ["Uzbek", "English", "Russian"],
+  "residence": "UZ",
+  "freelance": "Available",
+  "address": "Tashkent, Uzbekistan",
+  "languages": [
+    { "name": "Uzbek", "level": "100%" },
+    { "name": "English", "level": "80%" },
+    { "name": "Russian", "level": "60%" }
+  ],
   "skills": [
-    "HTML/CSS",
-    "JavaScript",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "EJS"
+    { "name": "Html", "level": "90%" },
+    { "name": "CSS", "level": "85%" },
+    { "name": "Js", "level": "80%" },
+    { "name": "PHP", "level": "75%" },
+    { "name": "WordPress", "level": "85%" }
   ],
   "extra_skills": [
-    "Bootstrap, Tailwind CSS",
-    "Git, GitHub & Version Control",
-    "RESTful API Development",
-    "Docker & Web Security Basics"
+    "Bootstrap, Materialize",
+    "Stylus, Sass, Less",
+    "Gulp, Webpack, Grunt",
+    "GIT Knowledge"
   ],
-  "work_place": "IT Park Uzbekistan / EPAM Systems",
-  "service_desc": "High-quality modern web application development, robust backend architecture, and intuitive user interfaces.",
-  "about_me": "I am a passionate Software Engineer based in Uzbekistan. I specialize in building fast, secure, and scalable digital solutions using Node.js, Express, EJS, and modern web technologies.",
-  "city": "Tashkent",
-  "title": [
-    "Web Development",
-    "Backend API Solutions",
-    "Database Design",
-    "UI/UX Optimization"
+  "hero_title": "Full Stack Software Engineer",
+  "hero_description": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Et, Volutpat Feugiat Placerat Lobortis. Natoque Rutrum Semper Sed Suspendisse Nunc Lectus.",
+  "service_desc": "Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor Do Amet Sint. Velit Officia Consequat Duis Enim Velit Mollit. Lorem Ipsum",
+  "services": [
+    {
+      "icon": "/author/icon/coding.svg",
+      "title": "Web Development",
+      "subtitle": "Blog, E-Commerce"
+    },
+    {
+      "icon": "/author/icon/illustration.png",
+      "title": "UI/UX Design",
+      "subtitle": "Mobile App, Website Design"
+    },
+    {
+      "icon": "/author/icon/Microphone.png",
+      "title": "Sound Design",
+      "subtitle": "Voice Over, Beat Making"
+    },
+    {
+      "icon": "/author/icon/game-development.png",
+      "title": "Game Design",
+      "subtitle": "Character Design, Props & Objects"
+    },
+    {
+      "icon": "/author/icon/Photographer.png",
+      "title": "Photography",
+      "subtitle": "Portrait, Product Photography"
+    }
   ],
-  "flower_desc": [
-    "Building professional web applications and scalable systems from scratch",
-    "Developing high-performance, secure RESTful API architectures",
-    "Crafting modern, responsive, and user-friendly web interfaces"
-  ],
-  "flower_name": [
-    "Web Application",
-    "RESTful API Service",
-    "E-Commerce Platform",
-    "Admin Dashboard",
-    "Database Integration",
-    "Cloud Deployment"
-  ],
-  "flower_price": ["100$", "150$", "200$", "250$", "300$", "400$"],
-  "famous_words": [
-    "Coding is not just about logic, it is the art of finding elegant solutions to complex problems."
-  ],
-  "famous_name": ["Software Engineer"]
+  "advertising": {
+    "title": "Advertising",
+    "subtitle": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi."
+  },
+  "social_links": [
+    { "icon": "/author/icon/facebook.png", "url": "#", "alt": "Facebook" },
+    { "icon": "/author/icon/instagram.png", "url": "#", "alt": "Instagram" },
+    { "icon": "/author/icon/twitter.png", "url": "#", "alt": "Twitter" },
+    { "icon": "/author/icon/linkedin.png", "url": "#", "alt": "LinkedIn" },
+    { "icon": "/author/icon/youtube.png", "url": "#", "alt": "Youtube" },
+    { "icon": "/author/icon/ball.png", "url": "#", "alt": "Dribbble" }
+  ]
 }

@@ -9,7 +9,7 @@ fs.readFile('database/user.json', 'utf8', (err, data) => {
   if (err) {
     console.log('Error:', err);
   } else {
-    use = JSON.parse(data);
+    user = JSON.parse(data);
   }
 });
 // 1: Kirish Code

@@ -1,1 +1,231 @@
-<div>HELLO WORLD YOU ARE IN AUTHORS!</div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= user.name %> - Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="/author/main.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <!-- Left Section -->
+      <aside class="left-sidebar">
+        <div class="profile-header">
+          <div class="avatar-wrapper">
+            <img
+              src="/author/images/Profile.jpg"
+              alt="<%= user.name %>"
+              class="avatar-img"
+            />
+          </div>
+          <h2><%= user.name %></h2>
+          <p><%= user.profession %></p>
+
+          <div class="social-links">
+            <% user.social_links.forEach(social => { %>
+              <a href="<%= social.url %>" class="social-icon">
+                <img src="<%= social.icon %>" alt="<%= social.alt %>" />
+              </a>
+            <% }); %>
+          </div>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- Personal Information -->
+        <div class="info-section">
+          <div class="info-row">
+            <span class="info-badge">Age:</span>
+            <span class="info-value"><%= user.age %></span>
+          </div>
+          <div class="info-row">
+            <span class="info-badge">Residence:</span>
+            <span class="info-value"><%= user.residence %></span>
+          </div>
+          <div class="info-row">
+            <span class="info-badge">Freelance:</span>
+            <span class="info-value available"><%= user.freelance %></span>
+          </div>
+          <div class="info-row">
+            <span class="info-badge">Address:</span>
+            <span class="info-value"><%= user.address %></span>
+          </div>
+        </div>
+
+        <hr class="divider" />
+        <!-- Lanuguage skils -->
+        <div class="languages-section">
+          <h3 class="sidebar-section-title">Languages</h3>
+          <div class="skill-list">
+            <% user.languages.forEach(lang => { %>
+              <div class="skill-item">
+                <div class="skill-label-row">
+                  <span><%= lang.name %></span>
+                  <span><%= lang.level %></span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="width: <%= lang.level %>"></div>
+                </div>
+              </div>
+            <% }); %>
+          </div>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- Skills -->
+        <div class="skills-section">
+          <h3 class="sidebar-section-title">Skills</h3>
+          <div class="skill-list">
+            <% user.skills.forEach(skill => { %>
+              <div class="skill-item">
+                <div class="skill-label-row">
+                  <span><%= skill.name %></span>
+                  <span><%= skill.level %></span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="width: <%= skill.level %>"></div>
+                </div>
+              </div>
+            <% }); %>
+          </div>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- Extra Skills -->
+        <div class="extra-skills-section">
+          <h3 class="sidebar-section-title">Extra Skills</h3>
+          <ul class="extra-skills-list">
+            <% user.extra_skills.forEach(extra => { %>
+              <li>
+                <img
+                  src="/author/icon/Icons.png"
+                  class="extra-skill-icon"
+                  alt="icon"
+                />
+                <span><%= extra %></span>
+              </li>
+            <% }); %>
+          </ul>
+        </div>
+      </aside>
+      <!-- Main Section -->
+      <main class="main-content">
+        <section class="hero-banner">
+          <div class="shape s-cyt"></div>
+          <div class="shape s-cgt"></div>
+          <div class="shape s-syr"></div>
+          <div class="shape s-db"></div>
+          <div class="shape s-cym"></div>
+          <div class="shape s-cgb"></div>
+          <div class="shape s-tr"></div>
+          <div class="hero-left">
+            <h1 class="hero-title"><%= user.hero_title %></h1>
+            <p class="hero-description"><%= user.hero_description %></p>
+            <a href="#" class="btn-hire">
+              <span>HIRE ME</span>
+              <img
+                src="/author/icon/Vector.png"
+                alt="arrow"
+                class="btn-arrow-icon"
+              />
+            </a>
+          </div>
+
+          <div class="hero-right">
+            <div class="doctor-img-wrapper">
+              <img
+                src="/author/images/my_image.png"
+                alt="Doctor"
+                class="doctor-img"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Service Section -->
+        <section class="services-section">
+          <h2 class="section-title">My Services</h2>
+          <p class="section-description"><%= user.service_desc %></p>
+
+          <div class="services-grid">
+            <% user.services.forEach(service => { %>
+              <div class="service-card">
+                <div class="service-icon-wrapper">
+                  <img
+                    src="<%= service.icon %>"
+                    alt="<%= service.title %>"
+                    class="service-icon-img"
+                  />
+                </div>
+                <h3 class="service-title"><%= service.title %></h3>
+                <p class="service-subtitle"><%= service.subtitle %></p>
+              </div>
+            <% }); %>
+
+            <!-- Advertising -->
+            <div class="service-card service-card-advertising">
+              <h3 class="service-title"><%= user.advertising.title %></h3>
+              <p class="service-subtitle"><%= user.advertising.subtitle %></p>
+              <a href="#" class="service-link">
+                <span>ORDER NOW</span>
+                <img src="/author/icon/vector2.png" alt="arrow" />
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Right Section -->
+      <div class="right-navbar">
+        <button class="theme-toggle-btn">
+          <img src="/author/icon/Contrast.png" alt="theme" />
+        </button>
+
+        <!-- Menu -->
+        <nav class="nav-menu">
+          <div class="nav-item-wrapper">
+            <div class="tooltip-home">Home</div>
+            <a href="#" class="nav-item active">
+              <img src="/author/icon/home.png" alt="Home" />
+            </a>
+          </div>
+
+          <div class="nav-item-wrapper">
+            <a href="#" class="nav-item">
+              <img src="/author/icon/Service.png" alt="Services" />
+            </a>
+          </div>
+
+          <div class="nav-item-wrapper">
+            <a href="#" class="nav-item">
+              <img src="/author/icon/Cv.png" alt="Education" />
+            </a>
+          </div>
+
+          <div class="nav-item-wrapper">
+            <a href="#" class="nav-item">
+              <img src="/author/icon/Portfolio.png" alt="Work" />
+            </a>
+          </div>
+
+          <div class="nav-item-wrapper">
+            <a href="#" class="nav-item">
+              <img src="/author/icon/Blog.png" alt="Blog" />
+            </a>
+          </div>
+
+          <div class="nav-item-wrapper">
+            <a href="#" class="nav-item">
+              <img src="/author/icon/Contact.png" alt="Contact" />
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>
