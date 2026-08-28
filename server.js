@@ -2,7 +2,16 @@ console.log('Web serverni boshlash!');
 const express = require('express');
 const app = express();
 const http = require('http');
+const fs = require('fs');
 
+let user;
+fs.readFile('database/user.json', 'utf8', (err, data) => {
+  if (err) {
+    console.log('Error:', err);
+  } else {
+    use = JSON.parse(data);
+  }
+});
 // 1: Kirish Code
 app.use(express.static('public'));
 app.use(express.json());
@@ -22,6 +31,10 @@ app.post('/create-item', (req, res) => {
 
 app.get('/', function (req, res) {
   res.render('harid');
+});
+
+app.get('/author', (req, res) => {
+  res.render('author', { user: user });
 });
 const server = http.createServer(app);
 let PORT = 3000;

@@ -1,0 +1,50 @@
+{
+  "name": "Nick",
+  "profession": "Full-Stack Software Engineer",
+  "age": 26,
+  "residence": "Uzbekistan",
+  "adress": "Uzbekistan, Tashkent",
+  "languages": ["Uzbek", "English", "Russian"],
+  "skills": [
+    "HTML/CSS",
+    "JavaScript",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "EJS"
+  ],
+  "extra_skills": [
+    "Bootstrap, Tailwind CSS",
+    "Git, GitHub & Version Control",
+    "RESTful API Development",
+    "Docker & Web Security Basics"
+  ],
+  "work_place": "IT Park Uzbekistan / EPAM Systems",
+  "service_desc": "High-quality modern web application development, robust backend architecture, and intuitive user interfaces.",
+  "about_me": "I am a passionate Software Engineer based in Uzbekistan. I specialize in building fast, secure, and scalable digital solutions using Node.js, Express, EJS, and modern web technologies.",
+  "city": "Tashkent",
+  "title": [
+    "Web Development",
+    "Backend API Solutions",
+    "Database Design",
+    "UI/UX Optimization"
+  ],
+  "flower_desc": [
+    "Building professional web applications and scalable systems from scratch",
+    "Developing high-performance, secure RESTful API architectures",
+    "Crafting modern, responsive, and user-friendly web interfaces"
+  ],
+  "flower_name": [
+    "Web Application",
+    "RESTful API Service",
+    "E-Commerce Platform",
+    "Admin Dashboard",
+    "Database Integration",
+    "Cloud Deployment"
+  ],
+  "flower_price": ["100$", "150$", "200$", "250$", "300$", "400$"],
+  "famous_words": [
+    "Coding is not just about logic, it is the art of finding elegant solutions to complex problems."
+  ],
+  "famous_name": ["Software Engineer"]
+}
