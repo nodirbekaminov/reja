@@ -1,10 +1,10 @@
 const list = [
-  "2 ta va undan ko'p bir xil harf qatnashgan!",
-  "So'zda faqat 1 ta harf bor!",
+  "Bu so'zda 2 marta va undan ko'p ishlatilgan!",
+  "Bu so'zda 1 marta ishlatilgan!",
   "Xato, faqat so'z kiriting!",
 ];
 
-char_count = (word, count) => {
+char_count = (word) => {
   if (typeof word !== 'string') {
     console.log(list[2]);
   } else {
@@ -18,7 +18,7 @@ char_count = (word, count) => {
     }
 
     for (let harf in obj) {
-      if (obj[harf] >= count) {
+      if (obj[harf] >= 2) {
         console.log(harf, obj[harf], list[0]);
       } else {
         console.log(harf, obj[harf], list[1]);
@@ -27,6 +27,10 @@ char_count = (word, count) => {
   }
 };
 
-char_count('success', 2);
+char_count('apple');
 console.log('***********************************************');
-char_count('address', 2);
+char_count('address');
+console.log('***********************************************');
+char_count('mississippi');
+console.log('***********************************************');
+char_count('infraztuzilma');
