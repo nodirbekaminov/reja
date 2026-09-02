@@ -28,12 +28,32 @@ app.set('view engine', 'ejs');
 
 // 4: Routing Code
 app.post('/create-item', (req, res) => {
-  console.log(req);
-  res.json({ test: 'success' });
+  console.log('user entered /create-item');
+  console.log(req.body);
+  const new_reja = req.body.reja;
+  db.collection('plans').insertOne({ reja: new_reja }, (err, data) => {
+    if (err) {
+      console.log(err);
+      res.end('Something went wrong!');
+    } else {
+      res.end('Successfully added!');
+    }
+  });
 });
 
 app.get('/', function (req, res) {
-  res.render('reja');
+  console.log('user entered /');
+  db.collection('plans')
+    .find()
+    .toArray((err, data) => {
+      if (err) {
+        console.log(err);
+        res.end('Something went wrong!');
+      } else {
+        console.log(data);
+        res.render('reja', { items: data });
+      }
+    });
 });
 
 app.get('/author', (req, res) => {
