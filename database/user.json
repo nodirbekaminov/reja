@@ -28,27 +28,27 @@
   "service_desc": "Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor Do Amet Sint. Velit Officia Consequat Duis Enim Velit Mollit. Lorem Ipsum",
   "services": [
     {
-      "icon": "/author/icon/coding.svg",
+      "icon": "/icon/coding.svg",
       "title": "Web Development",
       "subtitle": "Blog, E-Commerce"
     },
     {
-      "icon": "/author/icon/illustration.png",
+      "icon": "/icon/illustration.png",
       "title": "UI/UX Design",
       "subtitle": "Mobile App, Website Design"
     },
     {
-      "icon": "/author/icon/Microphone.png",
+      "icon": "/icon/Microphone.png",
       "title": "Sound Design",
       "subtitle": "Voice Over, Beat Making"
     },
     {
-      "icon": "/author/icon/game-development.png",
+      "icon": "/icon/game-development.png",
       "title": "Game Design",
       "subtitle": "Character Design, Props & Objects"
     },
     {
-      "icon": "/author/icon/Photographer.png",
+      "icon": "/icon/Photographer.png",
       "title": "Photography",
       "subtitle": "Portrait, Product Photography"
     }
@@ -58,11 +58,11 @@
     "subtitle": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi."
   },
   "social_links": [
-    { "icon": "/author/icon/facebook.png", "url": "#", "alt": "Facebook" },
-    { "icon": "/author/icon/instagram.png", "url": "#", "alt": "Instagram" },
-    { "icon": "/author/icon/twitter.png", "url": "#", "alt": "Twitter" },
-    { "icon": "/author/icon/linkedin.png", "url": "#", "alt": "LinkedIn" },
-    { "icon": "/author/icon/youtube.png", "url": "#", "alt": "Youtube" },
-    { "icon": "/author/icon/ball.png", "url": "#", "alt": "Dribbble" }
+    { "icon": "/icon/facebook.png", "url": "#", "alt": "Facebook" },
+    { "icon": "/icon/instagram.png", "url": "#", "alt": "Instagram" },
+    { "icon": "/icon/twitter.png", "url": "#", "alt": "Twitter" },
+    { "icon": "/icon/linkedin.png", "url": "#", "alt": "LinkedIn" },
+    { "icon": "/icon/youtube.png", "url": "#", "alt": "Youtube" },
+    { "icon": "/icon/ball.png", "url": "#", "alt": "Dribbble" }
   ]
 }
