@@ -1,55 +1,69 @@
-// TASK C
+// TASK D
 
-class Shop {
-  constructor(non, lagmon, cola) {
-    this.non = non;
-    this.lagmon = lagmon;
-    this.cola = cola;
-  }
+function checkContent(a, b) {
+  let first = a.split("").sort().join("");
+  let second = b.split("").sort().join("");
 
-  getVaqt() {
-    const now = new Date();
-    const soat = String(now.getHours()).padStart(2, "0");
-    const minut = String(now.getMinutes()).padStart(2, "0");
-    return `${soat}:${minut}`;
-  }
-
-  qoldiq() {
-    const vaqt = this.getVaqt();
-    console.log(
-      `Hozir ${vaqt}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola mavjud!`,
-    );
-  }
-
-  sotish(mahsulot, miqdor) {
-    if (mahsulot === "non") {
-      this.non -= miqdor;
-    } else if (mahsulot === "lagmon") {
-      this.lagmon -= miqdor;
-    } else if (mahsulot === "cola") {
-      this.cola -= miqdor;
-    }
-  }
-
-  qabul(mahsulot, miqdor) {
-    if (mahsulot === "non") {
-      this.non += miqdor;
-    } else if (mahsulot === "lagmon") {
-      this.lagmon += miqdor;
-    } else if (mahsulot === "cola") {
-      this.cola += miqdor;
-    }
-  }
+  return first === second;
 }
 
-const shop = new Shop(4, 5, 2);
-const result = new Shop(2, 5, 6);
+console.log(checkContent("mitgroup", "gmtiprou"));
+console.log(checkContent("hello", "olleh"));
+console.log(checkContent("apple", "banana"));
+console.log(checkContent("nodir", "ridon"));
 
-shop.qoldiq();
-shop.sotish("non", 3);
-shop.qabul("cola", 4);
-shop.qoldiq();
-result.qoldiq();
+// TASK C
+
+// class Shop {
+//   constructor(non, lagmon, cola) {
+//     this.non = non;
+//     this.lagmon = lagmon;
+//     this.cola = cola;
+//   }
+
+//   getVaqt() {
+//     const now = new Date();
+//     const soat = String(now.getHours()).padStart(2, "0");
+//     const minut = String(now.getMinutes()).padStart(2, "0");
+//     return `${soat}:${minut}`;
+//   }
+
+//   qoldiq() {
+//     const vaqt = this.getVaqt();
+//     console.log(
+//       `Hozir ${vaqt}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola mavjud!`,
+//     );
+//   }
+
+//   sotish(mahsulot, miqdor) {
+//     if (mahsulot === "non") {
+//       this.non -= miqdor;
+//     } else if (mahsulot === "lagmon") {
+//       this.lagmon -= miqdor;
+//     } else if (mahsulot === "cola") {
+//       this.cola -= miqdor;
+//     }
+//   }
+
+//   qabul(mahsulot, miqdor) {
+//     if (mahsulot === "non") {
+//       this.non += miqdor;
+//     } else if (mahsulot === "lagmon") {
+//       this.lagmon += miqdor;
+//     } else if (mahsulot === "cola") {
+//       this.cola += miqdor;
+//     }
+//   }
+// }
+
+// const shop = new Shop(4, 5, 2);
+// const result = new Shop(2, 5, 6);
+
+// shop.qoldiq();
+// shop.sotish("non", 3);
+// shop.qabul("cola", 4);
+// shop.qoldiq();
+// result.qoldiq();
 
 // TASK B
 
