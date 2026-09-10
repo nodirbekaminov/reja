@@ -1,16 +1,31 @@
-// TASK D
+// TASK E
 
-function checkContent(a, b) {
-  let first = a.split("").sort().join("");
-  let second = b.split("").sort().join("");
-
-  return first === second;
+function reverseString(string) {
+  return string.split("").reverse().join("");
 }
 
-console.log(checkContent("mitgroup", "gmtiprou"));
-console.log(checkContent("hello", "olleh"));
-console.log(checkContent("apple", "banana"));
-console.log(checkContent("nodir", "ridon"));
+let message = reverseString("Hello");
+console.log(message);
+
+message = reverseString("JavaScript");
+console.log(message);
+
+message = reverseString("Salom");
+console.log(message);
+
+// TASK D
+
+// function checkContent(a, b) {
+//   let first = a.split("").sort().join("");
+//   let second = b.split("").sort().join("");
+
+//   return first === second;
+// }
+
+// console.log(checkContent("mitgroup", "gmtiprou"));
+// console.log(checkContent("hello", "olleh"));
+// console.log(checkContent("apple", "banana"));
+// console.log(checkContent("nodir", "ridon"));
 
 // TASK C
 
