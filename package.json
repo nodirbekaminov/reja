@@ -13,9 +13,11 @@
   "author": "nick",
   "license": "MIT",
   "dependencies": {
-    "ejs": "^3.1.9",
+    "ejs": "^3.1.8",
     "express": "^4.18.2",
-    "mongodb": "^3.2.6",
-    "nodemon": "^3.1.14"
+    "mongodb": "^3.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
