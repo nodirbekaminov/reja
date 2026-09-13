@@ -1,17 +1,35 @@
-// TASK E
+// TASK F
 
-function reverseString(string) {
-  return string.split("").reverse().join("");
+function findDoublers(str) {
+  let seen = {};
+
+  for (let char of str) {
+    if (seen[char]) {
+      return true;
+    }
+    seen[char] = true;
+  }
+
+  return false;
 }
 
-let message = reverseString("Hello");
-console.log(message);
+console.log(findDoublers("hello")); // true
+console.log(findDoublers("world")); // false
 
-message = reverseString("JavaScript");
-console.log(message);
+// TASK E
 
-message = reverseString("Salom");
-console.log(message);
+// function reverseString(string) {
+//   return string.split("").reverse().join("");
+// }
+
+// let message = reverseString("Hello");
+// console.log(message);
+
+// message = reverseString("JavaScript");
+// console.log(message);
+
+// message = reverseString("Salom");
+// console.log(message);
 
 // TASK D
 
